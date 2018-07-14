@@ -1,0 +1,54 @@
+// Upotreba comma operatora (zareza)
+int rezultat, i = 1, j;
+rezultat = ( i = i + 4, j = --i ); // rezultat = 4
+
+// Upotreba operatora grananja
+int maksimum, a = 4, b = 6;
+maksimum = ( a >= b ) ? a : b; // maksimum = 6
+
+// Upotreba konverzije tipova
+float a = 1.0;
+double rezultat;
+
+rezultat = ( (double) a ) / 3.0;
+
+// Upotreba sizeof() operatora
+int rezultat;
+
+rezultat = sizeof(short int); // rezultat = 2
+rezultat = sizeof(long int);  // rezultat = 4
+
+
+
+int rezultat;
+int a = 3, b = 3;
+
+rezultat = a * --b; // rezultat = 6
+// Umesto prethodne linije mogu se pisati sledeće dve linije:
+// b = b - 1; rezultat = a * b;
+
+b++; // b = 3
+
+rezultat = a-- * b; // rezultat = 9
+// Umesto prethodne linije mogu se pisati sledeće dve linije:
+// rezultat = a * b; a = a - 1;
+
+// Primer logičkih operatora
+
+int rezultat;
+float a = 5.2;
+char b = '0';
+
+// rezultat = ( 0 || 1 ) && ( 1 ) = ( 1 ) && ( 1 ) = 1
+rezultat = ( a == 5. || a > 5.1 ) && ( b != '\n' );
+
+
+
+/* Primer operatora poređenja   */      
+                                         
+int rezultat;                               
+float a = 5.2, b = 11.4;                 
+                                         
+rezultat = (a >= b); /* rezultat = 0 */ 
+rezultat = (a < b); /* rezultat = 1 */   
+rezultat = (a != b); /* rezultat = 1 */
