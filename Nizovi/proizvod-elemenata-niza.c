@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    int i, niz[10];
+    int i, niz[5];
     int proizvod = 1;
 
     for(i = 0; i < 5; i++)
