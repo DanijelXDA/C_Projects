@@ -1,0 +1,84 @@
+1. Kojeg je tipa promenljiva namenjena za for petlju? Zašto?
+
+2. Kako se deklariše celobrojni niz od 16 elemenata?
+
+3. Kako se deklariše niz od 5 realnih brojeva?
+
+4. Koja petlja se najèešæe koristi u radu sa nizovima?
+
+5. Koja je prednost kada radimo sa nizovima?
+
+6. Kako se pretražuje niz? Objasniti šta znaèe sledeæi pojmovi u pretrazi niza:
+ "Prvo pojavljivanje", "Poslednje pojavljivanje" i "svako pojavljivanje". 
+
+7. Koji metod pretrage koristimo kada pretražujemo niz?
+
+8. Koje dve metode pretrage niza postoje?
+
+9. Objasniti èemu služi promenljiva temp u sledeæem kodu:
+
+    printf("\n\nSortiranje niza (u rastucem poretku)\n");
+        for(i = 0; i < brElem; i++)
+            for(j = i + 1; j < brElem; j++)
+                if( niz[i] > niz[j] )
+                {
+                    temp = niz[i];
+                    niz[i] = niz[j];
+                    niz[j] = temp;
+                }
+
+10. Šta radi sledeæi niz naredbi (Napomena: Sve promenljive su ranije definisane i inicijalizovane):
+
+    for(i = 0; i < brElem; i++)
+        printf("%d ", niz[i]);
+
+
+11. Šta radi sledeæa naredba: 	
+	int niz[50];
+
+
+12. Dat je sledeæi kod. Analizirati kod i zakljuèiti šta on radi:
+
+    for(i = 0; i < brElem; i++)
+        if( niz[i] == broj )
+        {
+            printf("\nElement postoji u nizu na poziciji %d\n", i);
+            break;
+        }
+
+
+13. Dat je sledeæi program. Program ima jednu grešku. Šta nedostaje (koja naredba) da bi program ispravno uèitao jedan broj.
+
+#include <stdio.h>
+
+int main(void)
+{
+    printf("Unesite jedan broj: ");
+    scanf("%d", &broj);
+
+    return 0;
+}
+
+
+14. Programer je napravio program u programsku jeziku C. Cilj programa je da uèita 10 elemenata celobrojnog niza, 
+ali program ne radi kako treba.
+Prekucati sledeæi kod i otkriti koju grešku je programer napravio u radu sa nizom.
+
+#include <stdio.h>
+
+int main(void)
+{
+    int i;
+    int niz[10];
+
+    for(i = 0; i < 15; i++)
+    {
+        printf("\tUnesite niz[%d] = ", i);
+        scanf("%d", &niz[i]);
+    }
+
+    return 0;
+
+}
+
+
