@@ -2,9 +2,9 @@
 
 int main(void)
 {
-    char i;
+    int i;
 
-    for(i = 'A'; i < 'Z'; i++)
+    for(i = 65; i < 90; i++)
         printf("%c ", i);
 
     return 0;
