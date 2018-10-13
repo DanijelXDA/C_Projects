@@ -1,0 +1,12 @@
+Zadatak 1.4* : Marija je odlučila da iznenadi svoje prijatelje Kristinu i Stefana.
+			   Znajući sebe i svoje kulinarske veštine, Marija je odlučila da napravi 2 pleha kolača sa jabukama.
+			   Ali kako bi sve bilo zanimljivije, Marija je odlučila da napravi takmičenje između njih dvoje.
+			   Naime, poenta takmičenja je da Marija vidi ko od njih dvoje može brže da pojede ceo pleh sa kolačima.
+			   Kolač je pravougaonog oblika i isečen je na parčiće dimenzija 25 cm2.
+			   Poznate su dimenzije oba kolača.
+			   Dimenzije prvog kolača su 50cm x 20cm i on je za Stefana, dok je drugi kolač dimenzija 13cm x 50cm i on je za Kristinu.
+			   Stefan jedno parče pojede za 26 sekundi, a Kristina za 37 sekundi.
+			   Izračunati ko će prvi pojesti svoj kolač.
+			   
+			   
+			   
