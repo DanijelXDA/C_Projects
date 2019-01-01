@@ -1,0 +1,31 @@
+___________________________________________
+|	Zadatak: Bombone i blizanci       |
+|	  				  |
+|	Autor: prof. Predrag Matoviæ	  |
+|	Adaptacija: Danijel Jovanoviæ     |
+___________________________________________
+
+
+BLizanci A i B se raduju predstojeæim praznicima.
+Znaju da æe dobiti puno èokoladnih bombona, u stanju su da ih
+sve pojedu za tili-èas.
+
+Njihovi roditelji žele da bombone potraju što duže pa su odluèili
+da blizancima daju izazov.
+
+Bombone æe razdeliti u NxN grupa (N <= 10).
+
+Imaju zadatak da odredu u kom redu, koloni ili dijagonali ima najviše bombona.
+Ukoliko ima više ponavljavljanja sa najviše bombona treba prijaviti svako pojavljivanje.
+
+Ukoliko taèno urade zadatak uzimaju bombone iz tako odreðenih grupa (vrsta, kolona, dijagonala),
+ako ne pogode onda èekaju sledeæi dan.
+
+Blizanci su setila da 2-10 zna programiranje pa su se njima obratili za pomoæ. (Pomoz' Bože(o) xD)
+
+
+Napisati program tako što æe na osnovu broja bombona u matrici, razdeljenih po grupama, reæi
+blizancima gde se nalazi najviše bombona.
+
+
+Dimenzije matrice kao i broj bombona u matrici (po poljima) da je tekstualnom datotekom "Ulaz.txt"
