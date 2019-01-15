@@ -75,13 +75,21 @@ int main(void)
         }
 
         int suma[8] = {0}, ukupno = 0;
+        int sumaK[8] = {0}, ukupnoK = 0;
 
-        for(int i = 0; i < 8; i++)
+        for(int i = 0; i < 8; i++) // da li se tuku po vrsti
             for(int j = 0; j < 8; j++)
                 if(tabla[i][j] == 1)
                 {
                     suma[i] += 1;
                     ukupno++;
+                }
+        for(int i = 0; i < 8; i++) // da li se tuku po koloni
+            for(int j = 0; j < 8; j++)
+                if(tabla[j][i] == 1)
+                {
+                    sumaK[i] += 1;
+                    ukupnoK++;
                 }
 
         if(ukupno == 8)
@@ -90,6 +98,14 @@ int main(void)
 
             for(int i = 0; i < 8; i++)
                 if(suma[i] > 1)
+                {
+                    tukuSe = true;
+                    break;
+                }
+
+                // po koloni
+                for(int i = 0; i < 8; i++)
+                if(sumaK[i] > 1)
                 {
                     tukuSe = true;
                     break;
