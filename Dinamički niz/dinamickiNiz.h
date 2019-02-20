@@ -1,3 +1,11 @@
+/**************************************************************
+***                 Danijel Jovanoviæ                       ***
+***                 MIT LICENCE                             ***
+***                 Copyright 2019                          ***
+***                                                         ***
+**************************************************************/
+
+
 #ifndef DINAMICKINIZ_H_INCLUDED
 #define DINAMICKINIZ_H_INCLUDED
 

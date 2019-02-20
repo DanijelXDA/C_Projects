@@ -95,13 +95,16 @@ int *obrisiElementSaPozicije(int *niz, int *duzina, int pozicija)
 }
 
 
-int *obrisiElementVrednost(int *niz, int *duzina, int vrednost) // POPRAVATI!
+int *obrisiElementVrednost(int *niz, int *duzina, int vrednost) // FIXED!
 {
     int i;
 
     for(i = 0; i < *duzina; i++)
         if(niz[i] == vrednost)
+        {
             niz = obrisiElementSaPozicije(niz, duzina, i);
+            i--; // BUGFIX: NOW FUNCTION DELETES EVERY REQUESTED VALUE!
+        }
 
     return niz;
 }
@@ -124,6 +127,7 @@ int testScenario()
         return -1;
     else
     {
+        /*
         printf("\n\n");
         prikazDinamickogNiza(niz, velicina);
 
@@ -144,7 +148,7 @@ int testScenario()
         printf("\n\nBrisanje elementa po indeksu\n\n");
         niz = obrisiElementSaPozicije(niz, &velicina, pozicija);
         prikazDinamickogNiza(niz, velicina);
-
+*/
         niz = obrisiElementVrednost(niz, &velicina, 2);
         prikazDinamickogNiza(niz, velicina);
 
