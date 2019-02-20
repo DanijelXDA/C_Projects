@@ -109,7 +109,38 @@ int *obrisiElementVrednost(int *niz, int *duzina, int vrednost) // FIXED!
     return niz;
 }
 
+int *dinamickiNizProstihBrojeva(int *niz, int *duzina)
+{
 
+    int *tmp = (int *) calloc(*duzina, sizeof(int));
+
+    if (tmp == NULL)
+        return NULL;
+    else
+    {
+        int i, j = 0;
+
+        for(i = 0; i < *duzina; i++)
+        {
+            int brDelilaca = 1, d;
+
+            for(d = 2; d <= niz[i]; d++)
+                if(niz[i] % d == 0)
+                    brDelilaca++;
+
+            if(brDelilaca == 2 && niz[i] > 1)
+            {
+                tmp[j] = niz[i];
+                j++;
+            }
+        }
+
+        (*duzina) = j;
+        tmp = (int *) realloc(tmp, j * sizeof(int));
+
+        return tmp;
+    }
+}
 
 int testScenario()
 {
@@ -127,7 +158,6 @@ int testScenario()
         return -1;
     else
     {
-        /*
         printf("\n\n");
         prikazDinamickogNiza(niz, velicina);
 
@@ -148,8 +178,11 @@ int testScenario()
         printf("\n\nBrisanje elementa po indeksu\n\n");
         niz = obrisiElementSaPozicije(niz, &velicina, pozicija);
         prikazDinamickogNiza(niz, velicina);
-*/
-        niz = obrisiElementVrednost(niz, &velicina, 2);
+
+        niz = obrisiElementVrednost(niz, &velicina, 12); // npr vrednost 12
+        prikazDinamickogNiza(niz, velicina);
+
+        niz = dinamickiNizProstihBrojeva(niz, &velicina);
         prikazDinamickogNiza(niz, velicina);
 
         oslobodiDinamickiKreiraniNiz(niz, &velicina);
