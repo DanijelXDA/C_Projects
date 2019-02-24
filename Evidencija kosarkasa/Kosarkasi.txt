@@ -1,0 +1,10 @@
+6 Toni Skrijelj Partizan 105 11
+2 Milan Milanovic Radnicki 130 5
+1 Petar Petrovic Partizan 20 4
+3 Bojan Bojanovic Partizan 20 4
+5 Marko Markovic Crvena_Zvezda 20 4
+4 Jovana Jovanovic Vojvodina 10 4
+7 Nikola Nikolic Vojvodina 100 20
+8 Branko Kockica Crvena_Zvezda 200 101
+9 Marko Markovic Proleter 23 2
+10 Zolt Konja Radnicki 34 23
