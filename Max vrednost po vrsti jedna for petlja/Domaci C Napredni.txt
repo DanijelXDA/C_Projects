@@ -1,0 +1,5 @@
+Zadatak 6: Niz najvećih elemenata / sa jednom for petljom / ako je moguće
+
+Opis: Napisati program koji korisniku omogućava da unese celobrojnu matricu reda nxm
+
+kreira i ispisuje niz čiji su elementi jednaki najvećim elementima u svakoj vrsti matrice.
